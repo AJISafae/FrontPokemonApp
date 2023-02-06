@@ -31,12 +31,7 @@ import AddPokemon from './Componenets/AddPokemon';
           {/* 👇️ only match this when no other routes match */}
           <Route
             path="*"
-            element={
-              <div>
-                <h2>404 Page not found </h2>
-              </div>
-            }
-          />
+            element={<AllTrainers />} />
         </Routes>
       </div>
     </Router>
