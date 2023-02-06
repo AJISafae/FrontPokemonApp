@@ -27,12 +27,15 @@ import AddPokemon from './Componenets/AddPokemon';
 
           {/* 👇️ handle dynamic path */}
           {/**          <Route path="/users/:userId" element={<AllPokemons />} /> */}
-          <Route path="/" element={<AllTrainers />} />
+          <Route path="/" element={<PageHome />} />
           {/* 👇️ only match this when no other routes match */}
           <Route
             path="*"
-            element={<AllTrainers />} 
-              
+            element={
+              <div>
+                <h2>404 Page not found </h2>
+              </div>
+            }
           />
         </Routes>
       </div>
