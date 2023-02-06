@@ -33,7 +33,7 @@ import AddPokemon from './Componenets/AddPokemon';
             path="*"
             element={
               <div>
-                <h2>404 Page not found </h2>
+                <h2>404 Page not found ..</h2>
               </div>
             }
           />
