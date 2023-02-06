@@ -18,7 +18,7 @@ import AddPokemon from './Componenets/AddPokemon';
 
         {/* 👇️ Wrap your Route components in a Routes component */}
         <Routes>
-          <Route path="/Trainers" element={<AllTrainers />} />
+          <Route path="https://frontpokemonapp-production.up.railway.app/Trainers" element={<AllTrainers />} />
           <Route path="/Pokemons" element={<AllPokemons />} />
           <Route path="/AddTrainer" element={<AddTrainer />} />
           <Route path="/AddPokemon" element={<AddPokemon />} />
@@ -31,7 +31,12 @@ import AddPokemon from './Componenets/AddPokemon';
           {/* 👇️ only match this when no other routes match */}
           <Route
             path="*"
-            element={<AllTrainers />} />
+            element={
+              <div>
+                <h2>404 Page not found </h2>
+              </div>
+            }
+          />
         </Routes>
       </div>
     </Router>
