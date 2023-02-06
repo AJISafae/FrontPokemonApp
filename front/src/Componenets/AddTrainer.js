@@ -22,7 +22,7 @@ export default class AddTrainer extends Component{
 
 
            
-          fetch("https://projetpoca-production.up.railway.app/Trainers", 
+          fetch("https://projetpoca-production.up.railway.app/trainers", 
           {  
             method: 'POST',
             headers: {
