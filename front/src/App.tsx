@@ -27,7 +27,7 @@ import AddPokemon from './Componenets/AddPokemon';
 
           {/* 👇️ handle dynamic path */}
           {/**          <Route path="/users/:userId" element={<AllPokemons />} /> */}
-          <Route path="/" element={<PageHome />}> </Route>
+          <Route path="/home" element={<PageHome />}> </Route>
           {/* 👇️ only match this when no other routes match */}
           <Route
             path="*"
