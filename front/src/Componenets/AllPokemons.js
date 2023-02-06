@@ -21,7 +21,7 @@ export default class AllPokemons extends Component {
         pokemons: json,
         loading: false
       }, () => {
-        console.log(json);http://localhost:3000
+        console.log(json);
 
       })
     } catch (error) {
