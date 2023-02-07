@@ -18,7 +18,7 @@ import AddPokemon from './Componenets/AddPokemon';
 
         {/* 👇️ Wrap your Route components in a Routes component */}
         <Routes>
-          <Route path="/Trainers" element={<h1>llTrainers</h1> } />
+          <Route path="/Trainers" element={<h1>AllTrainers</h1>  } />
           <Route path="/Pokemons" element={<h1>AllPokemons</h1>} />
           <Route path="/AddTrainer" element={<h1>AddTrainer</h1>} />
           <Route path="/AddPokemon" element={<h1>AddPokemon</h1>} />
@@ -27,7 +27,6 @@ import AddPokemon from './Componenets/AddPokemon';
 
           {/* 👇️ handle dynamic path */}
           {/**          <Route path="/users/:userId" element={<AllPokemons />} /> */}
-          <Route path="/" element={<h1>PageHome</h1>} />
           {/* 👇️ only match this when no other routes match */}
           <Route
             path="*"
