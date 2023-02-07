@@ -18,24 +18,17 @@ import AddPokemon from './Componenets/AddPokemon';
 
         {/* 👇️ Wrap your Route components in a Routes component */}
         <Routes>
-          <Route path="/Trainers" element={<h1>AllTrainers</h1>  } />
-          <Route path="/Pokemons" element={<h1>AllPokemons</h1>} />
-          <Route path="/AddTrainer" element={<h1>AddTrainer</h1>} />
-          <Route path="/AddPokemon" element={<h1>AddPokemon</h1>} />
+          <Route path="/Trainers" element={<AllTrainers />} />
+          <Route path="/Pokemons" element={<AllPokemons />} />
+          <Route path="/AddTrainer" element={<AddTrainer />} />
+          <Route path="/AddPokemon" element={<AddPokemon />} />
 
 
 
           {/* 👇️ handle dynamic path */}
           {/**          <Route path="/users/:userId" element={<AllPokemons />} /> */}
-          {/* 👇️ only match this when no other routes match */}
-          <Route
-            path="*"
-            element={
-              <div>
-                <h2>404 Page not found </h2>
-              </div>
-            }
-          />
+         
+        
         </Routes>
       </div>
     </Router>
